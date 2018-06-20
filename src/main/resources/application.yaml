@@ -1,0 +1,16 @@
+spring:
+  kafka:
+    bootstrap-servers: 0.0.0.0:9092
+
+app:
+  topic:
+    foo: testTopic3
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    com.memorynotfound: DEBUG
+
+secret:
+  constant: asdjksdhgjlasdjijio123jklj
