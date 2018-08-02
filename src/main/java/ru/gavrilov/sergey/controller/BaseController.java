@@ -42,6 +42,11 @@ public class BaseController {
         kafkaSender.send(message);
     }
 
+    @GetMapping(path = "/exception")
+    public void getSmthngWithExceptioon() {
+      int i = 220/0;
+    }
+
     private void validate(@RequestParam("password") String password) {
         if (!secret.equals(password)) {
             throw new ServiceException("password is broker");

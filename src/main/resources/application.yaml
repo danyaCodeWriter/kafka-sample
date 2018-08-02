@@ -14,3 +14,12 @@ logging:
 
 secret:
   constant: asdjksdhgjlasdjijio123jklj
+
+security:
+  ignored: /**
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
